@@ -1,50 +1,153 @@
 <!DOCTYPE html>
-<HTML>
-  <HEAD>
-    <META charset="UTF-8">
-    <TITLE>Дневник практики</TITLE>
-  </HEAD>
-  <BODY style="font-family: 'Times New Roman', serif; font-size: 14pt; width: 700px; margin: 0 auto; padding: 30px 20px;">
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дневник практики</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            color: #000;
+        }
 
-    <!-- ШАПКА -->
-    <div align="center">
-      <p style="margin: 0;">МИНИСТЕРСТВО ОБРАЗОВАНИЯ И НАУКИ<br>РЕСПУБЛИКИ ДАГЕСТАН</p>
-      
-      <br>
-      
-      <p style="margin: 0;">Частное профессиональное образовательное учреждение<br>«Республиканский полипрофессиональный колледж»</p>
-      
-      <br><br><br>
-      
-      <h2 style="margin: 0;">Дневник</h2>
-      
-      <br>
-      
-      <p style="margin: 0;"><b>по практической подготовке в форме практики обучающегося</b></p>
+        .page {
+            background-color: #fff;
+            width: 210mm; /* A4 width */
+            min-height: 297mm; /* A4 height */
+            padding: 20mm 25mm;
+            box-sizing: border-box;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            position: relative;
+        }
+
+        /* Шапка */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 16px;
+            font-weight: normal;
+            margin: 0;
+            line-height: 1.4;
+            text-transform: uppercase;
+        }
+
+        .header h2 {
+            font-size: 15px;
+            font-weight: normal;
+            margin: 15px 0 0 0;
+            line-height: 1.4;
+        }
+
+        /* Заголовок документа */
+        .title {
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            margin: 50px 0 30px 0;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 60px;
+        }
+
+        /* Поля для заполнения */
+        .field-group {
+            margin-bottom: 25px;
+            font-size: 18px;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .field-label {
+            white-space: nowrap;
+            padding-right: 5px;
+        }
+
+        .field-line {
+            flex-grow: 1;
+            border-bottom: 1px solid #000;
+            height: 25px;
+        }
+
+        /* Нижняя часть */
+        .bottom-section {
+            margin-top: 100px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .bottom-section p {
+            margin: 5px 0;
+        }
+
+        .year-line {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .year-line span {
+            display: inline-block;
+            border-bottom: 1px solid #000;
+            min-width: 60px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page">
+        <!-- Шапка -->
+        <div class="header">
+            <h1>МИНИСТЕРСТВО ОБРАЗОВАНИЯ И НАУКИ<br>РЕСПУБЛИКИ ДАГЕСТАН</h1>
+            <h2>Частное профессиональное образовательное учреждение<br>«Республиканский полипрофессиональный колледж»</h2>
+        </div>
+
+        <!-- Заголовок -->
+        <div class="title">Дневник</div>
+        <div class="subtitle">по практической подготовке в форме практики обучающегося</div>
+
+        <!-- Поля для заполнения -->
+        <div class="field-group">
+            <div class="field-label">Специальность</div>
+            <div class="field-line"></div>
+        </div>
+
+        <div class="field-group">
+            <div class="field-label">1. Фамилия</div>
+            <div class="field-line"></div>
+        </div>
+
+        <div class="field-group">
+            <div class="field-label">2. Имя отчество</div>
+            <div class="field-line"></div>
+        </div>
+
+        <div class="field-group">
+            <div class="field-label">3. Курс и группа</div>
+            <div class="field-line"></div>
+        </div>
+
+        <!-- Нижняя часть -->
+        <div class="year-line">
+            <span>20</span> <span>20</span> уч. год
+        </div>
+
+        <div class="bottom-section">
+            <p>Кизляр</p>
+            <p>202_ г.</p>
+        </div>
     </div>
 
-    <br><br><br>
-
-    <!-- ПОЛЯ ДЛЯ ЗАПОЛНЕНИЯ (ровные линии) -->
-    <p style="margin: 0 0 20px 0;">Специальность <span style="display: inline-block; width: 65%; border-bottom: 1px solid #000;"></span></p>
-    <p style="margin: 0 0 20px 0;">1. Фамилия <span style="display: inline-block; width: 68%; border-bottom: 1px solid #000;"></span></p>
-    <p style="margin: 0 0 20px 0;">2. Имя отчество <span style="display: inline-block; width: 64%; border-bottom: 1px solid #000;"></span></p>
-    <p style="margin: 0 0 20px 0;">3. Курс и группа <span style="display: inline-block; width: 63%; border-bottom: 1px solid #000;"></span></p>
-
-    <br><br>
-
-    <!-- ГОД ОБУЧЕНИЯ -->
-    <div align="center">
-      <p style="margin: 0;">20___ 20___ уч. год</p>
-    </div>
-
-    <br><br><br><br><br><br>
-
-    <!-- НИЗ -->
-    <div align="center">
-      <p style="margin: 0;">Кизляр</p>
-      <p style="margin: 0;">202_ г.</p>
-    </div>
-
-  </BODY>
-</HTML>
+</body>
+</html>
